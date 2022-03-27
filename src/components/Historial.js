@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class Historial extends Component {
     renderizarHistorial(){
         let listaHistorial=this.props.opcionesSeleccionadas.slice(0,-1)
-        console.log(listaHistorial);
+      
         return listaHistorial.map((opcion,i)=><li key={i}>{opcion.toUpperCase()}</li>)
     }
     
